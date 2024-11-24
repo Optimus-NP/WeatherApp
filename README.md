@@ -105,6 +105,7 @@ Welcome to the **Weather App**! This Android application provides comprehensive 
 ## Future Enhancements
 
 - Add support for more cities.
+- Add backend service to maintain user accounts and preferences.
 - Provide weekly and monthly weather trends.
 - Implement dark mode for better user experience.
 - Introduce machine learning models for weather predictions.
@@ -114,4 +115,4 @@ Welcome to the **Weather App**! This Android application provides comprehensive 
 ## Contact
 
 For any queries or suggestions, please reach out to:  
-**Your Name** - [namanpahwa20@gmail.com](mailto:namanpahwa20@gmail.com)  
+**Naman Pahwa** - [namanpahwa20@gmail.com](mailto:namanpahwa20@gmail.com)  
