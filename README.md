@@ -76,7 +76,7 @@ Welcome to the **Weather App**! This Android application provides comprehensive 
 
 ---
 
-## Screenshots (Optional)
+## Screenshots
 
 <div style="display: flex; justify-content: space-around;">
 
