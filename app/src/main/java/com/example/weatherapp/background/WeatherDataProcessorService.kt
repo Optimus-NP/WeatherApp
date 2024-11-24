@@ -2,10 +2,12 @@ package com.example.weatherapp.background
 
 import android.app.Service
 import android.content.Intent
+import android.os.Build
 import android.os.Handler
 import android.os.HandlerThread
 import android.os.IBinder
 import android.util.Log
+import androidx.annotation.RequiresApi
 import com.example.weatherapp.weatherdata.WeatherDataFetcher
 import java.util.concurrent.TimeUnit
 
@@ -66,6 +68,7 @@ class WeatherDataProcessorService : Service() {
         dailyRollUpsHandler = Handler(dailyRollUpsThread!!.looper)
 
         dailyRollUpsHandler!!.postDelayed(object : Runnable {
+            @RequiresApi(Build.VERSION_CODES.O)
             override fun run() {
                 // Perform your background tasks here
                 dailyRollUpsAggregatorHandler!!.dailyRollUps()

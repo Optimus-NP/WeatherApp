@@ -8,20 +8,25 @@
     <fragment
         android:id="@+id/nav_transform"
         android:name="com.example.weatherapp.ui.current.CurrentWeatherFragment"
-        android:label="@string/menu_transform"
-        tools:layout="@layout/fragment_cities_weather" />
+        android:label="@string/menu_current"
+        tools:layout="@layout/fragment_cities_weather">
 
-    <!--<fragment
-        android:id="@+id/nav_reflow"
-        android:name="com.example.weatherapp.ui.reflow.ReflowFragment"
-        android:label="@string/menu_reflow"
-        tools:layout="@layout/fragment_reflow" />
+        <action
+            android:id="@+id/action_nav_transform_to_nav_trends"
+            app:destination="@id/nav_trends" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.weatherapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />-->
+        android:id="@+id/nav_trends"
+        android:name="com.example.weatherapp.ui.trends.TrendsFragment"
+        android:label="@string/menu_trends"
+        tools:layout="@layout/fragment_trends">
+
+        <argument
+            android:name="city"
+            app:argType="string"
+            app:defaultValue="Bengaluru" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_settings"
